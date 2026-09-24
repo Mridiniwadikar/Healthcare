@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UtF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="landing.css">
+    <title> Hospital queue management </title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h2>HealthCare</h2>
+                <p>Better Healthy.Brighter Tomorrow</p>
+            </div>
+        
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Doctors">Doctors</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        <form action="/search-result-page" method="GET" class="search-form">
+  <input type="search" name="q" placeholder="Search everything..." aria-label="Search site">
+  <button type="submit">Search</button>
+</form>
+        <a href="#appointmet">Book Appointment</a>
+        <a href="login">login</a>
+    </header>
+    <section id="Homee">
+        <div class="home-text-block">
+        <p>Welcome to our hospital! Hope we see u again</p>
+        <h1>Quality Healthcare<br>for a healthier you</h1>
+        <p>We provide trusted medical care with advanced <br>technology and a compassionate team of professional</p>
+         <a href="#appointment">Book Appointment</a>
+         <a href="#services">View Services</a>
+        </div>
+        
+        <div>
+             <img src="hospital.jpeg" alt="Hospital Image" height="400px" width="800px">
+        </div>
+    </section>
+    <section>
+        <div class="about-container">
+            <div>
+                <h2>About Us</h2>
+                <p>We are a leading healthcare provider committed to delivering high-quality medical services and compassionate care to our patients. Our team of experienced doctors and medical professionals work tirelessly to ensure the well-being of our community.</p>
+                <a href="#appointment">Book Appointment</a>
+            </div>
+           <div> <h3>🧑‍⚕️ Expert Doctors</h3>
+           <p> Experienced & dedicated <br> medical professionals</p> </div>
+           
+          <div> <h3>🏥 Advanced Technology</h3>
+           <p>Modern equipment for <br>brtter diagnosis & care</p>
+
+          <div> <h3>❤️ Patient-Centered Care</h3>
+           <p>Compassionate care tailored to your needs</p>
+            
+          <div> <h3>⏱️ Efficient Services</h3>
+              <p>Streamlined processes for <br>faster treatment & recovery</p></div>
+        </div>
+
+</section>
+<section id="sevices">
+    <p>COMPREHENSIVE CARE</p>
+    <h2>Our Services</h2>
+    <p>We offer a wide range of medical services to meet your healthcare needs</p>
+    <div class="services-container">
+        <div> 
+            <h2>🩺</h2>
+            <h3>General Medicine</h3>
+            <p>Routine checkups,diagnosis and treatment</p>
+            <a href="#appointment">Learn more ➡️</a>
+        </div>
+
+        <div>
+            <h2>🏥</h2>
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency services for critical situations</p>
+            <a href="#appointment">Learn more ➡️</a>
+        </div>
+        <div>
+            <h2>⚕️</h2>
+            <h3>Specialist Care</h3>
+            <p>Advanced treatments and specialized medical care</p>
+            <a href="#appointment">Learn more ➡️</a>   
+        </div>
+
+        <div>
+            <h2>🧪</h2>
+            <h3>Diagnostic Services</h3>
+            <p>Comprehensive diagnostic tests and imaging</p>
+            <a href="#appointment">Learn more ➡️</a>
+        </div>
+</div>
+</section>
+<section id="appointment">
+    <p>BOOK AN APPOINTMENT</p>
+    <h2>Schedule Your Visit</h2>
+    <p>Fill out the form below to book an appointment with our healthcare professionals</p>
+    <form action="/submit-appointment" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <br>
+        <br>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+        <br>
+        <br>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+    </section>
+    <section>
+        <div>
+            <div>
+                <h3>🗓️ Quick & Easy Appointments</h3>
+                <p>Book your appointment online in just a few clicks</p>
+            
+            </div>
+            <div>
+                <h3> 🕔 Flexible Scheduling</h3>
+                <p>Choose a time that works best for you</p>
+            
+            </div>
+            <div>
+                <h3>🧑‍💼Expert Consultation</h3>
+                <p>Get advice from our experienced medical professionals</p>
+            </div>
+        </div>
+    </section>
+    <footer id="Contact">
+        <div>
+        <div>
+        <h2> 💊HealthCare</h2>
+        <p>Better Health,Better Life</p>
+        <br>
+        <p> Your trusted partner in health and wellness<br>We are committed to providing the best <br>
+        medical care for you and your family.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="#Home">Home</a>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Contact</p>
+            <p>Doctors</p>
+
+        </div>
+        <div> 
+            <h4>Our Services</h4>
+            <a href="General medicine">General Medicine</a>
+            <p>Cardiology</p>
+            <p>Neurology</p>
+            <p>Orthopedics</p>
+            <p>Dermatology</p>
+
+        </div>
+
+        <div>
+            <h4>Contact Us</h4>
+            <p>123 Health street,<br>Mumbai, Maharashtra</p>
+            <p>☎️ 123-456-7890</p>
+            <p>✉️ info@healthcare.com</p>
+            <p>24/7 Support</p>
+
+        </div>
+        <div>
+            <span>© 2024 HealthCare. All rights reserved.</span>
+            <span>Privacy Policy &nbsp;|&nbsp; Terms of Service</span>
+        </div>
+        </div>
+
+        </footer>
+    </body>
+    
+</html>

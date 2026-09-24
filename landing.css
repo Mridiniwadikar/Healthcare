@@ -1,0 +1,404 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Global section padding for clean spacing */
+section {
+    padding: 60px 10%;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    color: #007bff; /* Medical Blue */
+}
+
+header p {
+    font-size: 12px;
+    color: #666666;
+}
+
+nav a {
+    color: #333333;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Search Form Alignment */
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* "Book Appointment" Header Button */
+header > a {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+header > a:hover {
+    background-color: #0056b3;
+}
+
+/* ==========================================================================
+   3. HOME / HERO SECTION
+   ========================================================================== */
+#Homee {
+    background-color: #f4f7f6;
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+#Homee p:first-of-type {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#Homee h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #111111;
+}
+
+#Homee p:last-of-type {
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+/* Hero Section Buttons */
+#Homee a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#Homee a:first-of-type {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+#Homee a:first-of-type:hover {
+    background-color: #0056b3;
+}
+
+#Homee a:last-of-type {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+#Homee a:last-of-type:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.hospital-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.hospital-image img {
+    
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    object-fit: cover;   
+}
+/* ==========================================================================
+   4. ABOUT SECTION 
+   ========================================================================== */
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.about-container h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-container p {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* About Section CTA Link */
+.about-container a {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.about-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Feature grid items (Expert Doctors, Advanced Tech, etc.) */
+.about-container div h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   5. SERVICES SECTION
+   ========================================================================== */
+#sevices {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#sevices > p:first-of-type {
+    color: #007bff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#sevices h2 {
+    margin-bottom: 10px;
+}
+
+#sevices > p:last-of-type {
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+/* 4-Column Grid layout for services */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.services-container > div {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.services-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.services-container h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.services-container h3 {
+    margin-bottom: 10px;
+}
+
+.services-container p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.services-container a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   6. APPOINTMENT FORM SECTION
+   ========================================================================== */
+#appointment {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#appointment p:first-of-type {
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}
+
+#appointment h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#appointment p:last-of-type {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* Grid setup for side-by-side or block inputs */
+#appointment form {
+    display: flex;
+    flex-direction: column;
+}
+
+#appointment label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#appointment input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    width: 100%;
+}
+
+#appointment input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#appointment button[type="submit"] {
+    background-color: #28a745; /* Success Green for submission */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#appointment button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Section right below the form (Quick & Easy features) */
+#appointment + section > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+#appointment + section h3 {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#appointment + section p {
+    color: #666;
+}
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+footer {
+    background-color: #1f2937; /* Clean dark grey-blue background */
+    color: #f3f4f6;
+    padding: 60px 10% 20px;
+}
+
+/* Formats the footer sections columns layout */
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+footer h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+footer h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #374151;
+    padding-bottom: 5px;
+}
+
+footer p, footer a {
+    color: #9ca3af;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Bottom copyright and row styling */
+footer > div > div:last-child {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #6b7280;
+}
